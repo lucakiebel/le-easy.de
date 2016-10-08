@@ -1,0 +1,34 @@
+<html>
+<head>
+	<meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+	<link type="text/css" href="content.css" rel="stylesheet" />
+	<title>Einleitung</title>
+</head>
+
+<body>
+	<div class="content left">	
+		<h2>Aufgabe</h2>
+		<p>Der interne Mitarbeiter-Bereich auf dem Webserver Ihres Ausbildungsbetriebes soll einen simplen Zugriffsschutz erhalten. Sie erhalten daher die Aufgabe, eine 			entsprechende .htaccess - Datei zu erstellen. Sie haben ausschlie&szliglich &uumlber die Kommandozeile Zugriff auf den Webserver und daher mit dem Editor vim. Da Ihnen 		zun&aumlchst einige Angaben des Administrators fehlen, erstellen Sie erst einmal eine Vorlage. Sie schreiben folgenden Inhalt in die Datei 
+		/www/htdocs/intern/.htaccess :</p>
+		<pre><code>
+	# .htaccess-Example
+	AuthType Basic
+	AuthName "Password Required"
+	AuthUserFile /www/passwords/password.file
+	Require User admin
+		</code></pre>
+
+		<p>Anschlie&szligend speichern Sie die Datei und schlie&szligen den Editor.<br>
+		Nach kurzer Zeit erfahren Sie vom Administrator die Details. Sie &oumlffnen die vorhandene Datei, speichern eine Sicherungskopie unter anderem Namen und &aumlndern die 		Datei wie folgt ab:</p>
+		<pre><code>
+	# .htaccess-Datei fuer Servicebereich
+	AuthType Basic
+	AuthName "Service-Bereich"
+	AuthUserFile /usr/verwaltung/.htusers
+	AuthGroupFile /usr/verwaltung/.htgroups
+	Require Group Servicetechniker
+	Require User Werner Dieter Heidi
+		</code></pre>
+	</div>
+</body>
+</html>

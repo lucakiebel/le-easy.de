@@ -1,0 +1,203 @@
+
+html, body {
+}
+
+* {
+	    margin:0;
+	    padding:0;
+	    outline:0;
+}
+
+.content {
+	height: 85%;
+	overflow-y:scroll;
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	border:solid 1px #4c141b;
+	width:1024px;
+	margin:auto;
+	display:block;
+	padding-bottom:1em;
+	padding-top:1em;
+	color: #383838;
+	border-radius: 5px;
+  	background:#f4f4f4;
+	position:relative;
+}
+
+.center {
+	text-align:center;
+}
+.authors {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:250px;  
+}
+
+
+.left ul{
+	padding-left: 3em;
+	list-style-type: square;
+	padding-bottom: 1em;
+}
+
+.left ol{
+	padding-left: 3.5em;
+	padding-bottom: 1em;
+ }
+
+.left li{
+	padding-top: 0.3em;
+}
+
+.left p{
+	padding-left: 2em;
+	padding-bottom:1em;
+}
+
+.left img{
+	padding-left: 2em;
+	padding-bottom: 1em;
+}
+
+.left a{
+	padding-left: 2em;
+}
+
+.left h2 {
+	padding-left: 1.25em;
+	padding-bottom: 1em;
+	color: #692630;
+}
+
+.left h3 {
+	padding-left: 1.5em;
+	padding-bottom: 1em;
+	color: #692630;
+}
+
+h1 {
+	padding: 1em;
+	color: #692630;
+}
+
+h2 {
+	padding-left: 1em;
+	color: #692630;
+}
+
+h3 {
+	padding: 1em;
+	color: #692630;
+}
+
+.image {
+	float:right;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 3em;
+}
+
+a:link {
+	color: #009fde;
+	text-decoration: none;
+}
+a:hover {
+	color: #009fde;
+	text-decoration: none;
+	opacity:.5;
+}
+a:active {
+	color: #009fde; 
+	text-decoration: none;
+}
+a:visited {
+	color: #009fde; 
+	text-decoration: none
+}
+
+.hbbk_logo{
+	padding:2em;
+}
+
+/* 
+	Grey Suits you Sir. Please host the images on your own server.
+	written by Stuart Colville http://www.muffinresearch.co.uk
+*/
+
+table,td
+{
+	border: 1px solid #CCC;
+	border-collapse: collapse;
+}
+
+table
+{
+	border: none;
+	border: 1px solid #CCC;
+	margin-left: 2em;
+	margin-top: 1em;
+	margin-bottom:1em;
+	width:90%;
+}
+
+thead th,
+tbody th
+{
+	color: #666;  
+	padding: 5px 10px;
+	border-left: 1px solid #CCC;
+}
+
+tbody th
+{
+	background: #e4e4e4;
+	border-top: 1px solid #CCC;
+	text-align: left;
+	font-weight: normal;
+}
+
+tbody tr td
+{
+	padding: 5px 10px;
+	color: #666;
+}
+
+
+tbody tr:hover td
+{
+	color: #454545;
+}
+
+tfoot td,
+tfoot th
+{
+	border-left: none;
+	border-top: 1px solid #CCC;
+	padding: 4px;
+	color: #666;
+}
+caption
+{
+	text-align: left;
+	font-size: 120%;
+	padding: 10px 0;
+	color: #666;
+}
+table a:link
+{
+	color: #666;
+}
+table a:visited
+{
+	color: #666;
+}
+table a:hover
+{
+	color: #003366;
+	text-decoration: none;
+}
+table a:active
+{
+	color: #003366;
+}

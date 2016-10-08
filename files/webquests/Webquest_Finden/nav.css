@@ -1,0 +1,79 @@
+* {
+    margin:0;
+    padding:0;
+    outline:0;
+}
+
+#header {
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	border-bottom:solid 6px #4c141b;
+	width:1024px;
+	margin:auto;
+	margin-top: 0.5em;
+	height: 110px;
+	display:block;
+	color: #e3e3e3;
+	border-radius: 5px;
+	background:#93989b;
+
+	background:-moz-linear-gradient(top, #451219, #641b24); /* Firefox */
+	background:-webkit-linear-gradient(top, #451219, #641b24); /* Safari, Chrome */
+	background:-o-linear-gradient(top, #451219, #641b24); /* Opera */
+	background:-ms-linear-gradient(top, #451219, #641b24); /* IE */
+	background:linear-gradient(top, #451219, #641b24); /* W3C Standard */
+}
+
+#supertuxLink {
+	float:right;
+	padding-right:2em;
+	padding-top:0.5em;
+}
+
+#objectiveContainer {
+	float:right;
+	padding-right: 2em;
+}
+
+#objectiveContainer {
+	display: block;
+	padding-top: 0.5em;
+}
+
+#objectiveContainer a{
+	font-weight:bold;
+}
+
+#objectiveContainer ul {
+	list-style-type: none;
+}
+
+#lpiLink {
+	padding-left:0.8em;
+	padding-top: 0.4em;
+	float:left;
+}
+
+#nav {
+	float:left;
+	padding-left:3em;
+	padding-top:3em;
+}
+
+a:link {
+	color: #e3e3e3;
+	text-decoration: none;
+}
+a:hover {
+	color: #e3e3e3;
+	text-decoration: none;
+	opacity: .5;
+}
+a:active {
+	color: #e3e3e3; 
+	text-decoration: none;
+}
+a:visited {
+	color: #e3e3e3; 
+	text-decoration: none;
+}
+

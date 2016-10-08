@@ -1,0 +1,83 @@
+<html>
+<head>
+	<meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+	<link type="text/css" href="content.css" rel="stylesheet" />
+	<title>Einleitung</title>
+</head>
+
+<body>
+	<div class="content left">	
+		<h2>Vorgehen</h2>
+		<h3>Organisation</h3>
+		<p>Arbeiten Sie in Partnerarbeit.</p>
+		<h3>Hilfe</h3>
+
+		<form action="textarea.htm">
+		<p>Erstellen Sie als Root die ben&oumltigten Gruppen und Benutzer mittels folgender Befehle:<br>
+		<textarea name="code" cols="100" rows="13" readonly>
+groupadd -g 1010 Mitarbeiter
+groupadd -g 1020 Werkstatt
+groupadd -g 1030 Verwaltung
+
+useradd -m -s /bin/bash -g Werkstatt -G Mitarbeiter Bob
+useradd -m -s /bin/bash -g Werkstatt -G Mitarbeiter Peter
+useradd -m -s /bin/bash -g Verwaltung -G Mitarbeiter Alice
+useradd -m -s /bin/bash -g Verwaltung -G Mitarbeiter Susan
+
+echo "Bob:pw" | chpasswd
+echo "Peter:pw" | chpasswd
+echo "Alice:pw" | chpasswd
+echo "Susan:pw" | chpasswd</textarea>
+		</p>
+		</form>
+
+		<p>
+		Um die Benutzer und Gruppen schnell anlegen zu k&oumlnnen, kopieren Sie diese Befehle in ein ausf&uumlhrbares Skript. <br>
+		Die letzten Kommandos setzen "pw" als Passwort f&uumlr alle Benutzer.<br><br>
+		F&uumlllen Sie folgende Tabelle aus, um einen &Uumlberblick &uumlber Benutzer und Gruppenzugeh&oumlrigkeit zu haben:</p>
+		
+		<table>
+			<tr>			
+				<th>Benutzer</th>
+				<th>Prim&aumlrgruppe</th>
+				<th>Sekund&aumlrgruppe</th>
+				<th>Passwort</th>
+			</tr>
+			<tr>
+				<td>Bob</td>
+				<td></td>
+				<td></td>
+				<td>pw</td>
+			</tr>
+			<tr>
+				<td>Peter</td>
+				<td> </td>
+				<td></td>
+				<td>pw</td>
+			</tr>
+			<tr>
+				<td>Alice</td>
+				<td></td>
+				<td></td>
+				<td>pw</td>
+			</tr>		
+			<tr>
+				<td>Susan</td>
+				<td></td>
+				<td></td>
+				<td>pw</td>
+			</tr>		
+		</table>
+
+		<h3>Stichworte zum Thema</h3>
+		<ul>
+			<li>Zugriffsrechten</li>
+			<li>Oktalnotation</li>
+			<li>Buchstabennotation</li>
+			<li>Benutzerklassen (Eigent&uumlmer, Gruppen, Andere)</li>
+			<li>Kommandos: <code>chmod, chown, chgrp</code></li>
+		</ul>
+
+	</div>
+</body>
+</html>

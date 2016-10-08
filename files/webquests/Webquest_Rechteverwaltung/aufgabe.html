@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link type="text/css" href="content.css" rel="stylesheet">
+    <title>Einleitung</title>
+  </head>
+  <body>
+    <div class="content left">
+      <h2>Aufgabe</h2>
+      <p>Auf dem Linux-System der Autowerkstatt <i>Carfix GmbH</i> existieren
+        drei Benutzergruppen: die Gruppe <i>mitarbeiter</i>, die Gruppe <i>werkstatt</i>
+        und die Gruppe <i>verwaltung</i>.<br>
+        Jeder Benutzer ist Mitglied in der Gruppe <i>mitarbeiter</i> und in
+        jeweils einer der Gruppen <i>service</i> oder <i>verwaltung</i>.<br>
+        In der Werkstat sind die Mitarbeiter Bob und Peter t&auml;tig, in der
+        Verwaltung arbeiten Alice und Susan.<br>
+        <br>
+        Sie werden nun vom Gesch&auml;ftsf&uuml;hrer der Autowerkstatt beauftragt, f&uuml;r die
+        Mitarbeiter des Betriebes folgende Ordnerstruktur im Dateisystem
+        anzulegen:</p>
+      <img src="images/tree.png">
+      <p>Der Ordner <i>/Mitarbeiter</i> dient beiden Benutzergruppen als
+        gemeinsamer Ordner; die beiden Unterordner sind gesch&uuml;tzte, interne
+        Ordner der jeweiligen Abteilung.<br>
+      </p>
+      <h3>Teilaufgabe 1</h3>
+      <ul>
+        <li>Erstellen Sie die Ordnerstruktur und setzen Sie die ensprechenden
+          Rechte und Eingentums-Einstellungen.</li>
+        <li>Testen Sie anschlie&szlig;end in der Rolle der Mitarbeiter (Alice, Bob,
+          ...) die Richtigkeit der Berechtigungen und f&uuml;hren Sie eventuelle
+          Korrekturen aus!</li>
+      </ul>
+      <h3>Teilaufgabe 2</h3>
+      <ul>
+        <li>Alice legt nun im Verzeichnis <i>/Mitarbeiter</i> die Datei <i>Schichteinteilung.txt</i>
+          an und bitte Sie um Hilfe bei der Rechtevergabe. Sie m&ouml;chte, dass alle
+          Mitglieder der Verwaltung Lese- und Schreibrechte zu dieser Datei
+          erhalten, Mitglieder der Werkstatt sollen die Datei jedoch nur lesen
+          k&ouml;nnen.<br>
+          Welche Kommandos f&uuml;hren Sie aus?</li>
+        <li>Testen Sie anschlie&szlig;end in der Rolle von Bob und Susan, ob Alice die
+          richtigen Berechtigungen f&uuml;r die Datei gesetzt hat.</li>
+        <li>Nach einiger Zeit beschweren sich einige Mitarbeiter, dass im
+          gemeinsamen Verzeichnis /Mitarbeiter ihre Dateien verschwinden. Setzen
+          Sie die Rechte so, dass zwar alle Mitarbeiter Lese- und Schreibrechte
+          besitzen, jedoch nur f&uuml;r die jeweils eigens angelegten Dateien
+          (Stichwort Sonderrechte).</li>
+      </ul>
+    </div>
+  </body>
+</html>

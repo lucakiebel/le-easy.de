@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link type="text/css" href="content.css" rel="stylesheet">
+    <title>Einleitung</title>
+  </head>
+  <body>
+    <div class="content left">
+      <h2>Vorgehen</h2>
+      <ul>
+        <li>Laden Sie sich den Quellcode der Software <i>Pidgin</i> aus dem
+          Internet herunter und entpacken das Archiv in Ihrem Home-Verzeichnis.</li>
+        <li>Wechseln Sie in das Verzeichnis der entpackten Dateien und suchen
+          Sie nach allen Dateien mit der Endung <b>.c</b> (auch in
+          Unterverzeichnissen) auf folgende Arten:
+          <ul>
+            <li>Benutzen Sie das Kommando <code>find</code> mit entsprechenden
+              Optionen.</li>
+            <li>Benutzen Sie das Kommando <code>locate</code>.<br>
+              Hinweis: Hier m&uuml;ssen Sie die Ausgabe von <code>locate</code>
+              umlenken. Mit <code>grep</code> k&ouml;nnen Sie die Ausgabe filtern,
+              so dass Sie nur Suchergebnisse aus dem Pidgin-Ordner erhalten.</li>
+          </ul>
+          Verwenden Sie f&uuml;r die Ausgaben die Kommandos <code>less</code> und <code>more</code>,
+          um alle Ergebnisse sehen zu k&ouml;nnen.</li>
+        <li>Um das Ergebnis zu Sortieren, leiten Sie die Ausgabe Ihres <code>find</code>-Kommandos
+          in eine Datei um. Den Inhalt dieser Datei k&ouml;nnen Sie dann mit <code>sort</code>
+          sortieren.<br>
+          Optional: Es macht f&uuml;r die Sortierung Sinn, den Pfadnamen vor den
+          Dateinamen zu entfernen. Dazu k&ouml;nnen Sie das Tool <code>basename</code>
+          verwenden. Allerdings verlangt dies eine geschickte Kombination mit <code>xargs
+            -i</code>. </li>
+        <li>Um einen Einstieg in den Quellcode zu finden, suchen Sie die <i>Main-Methode</i>.
+          <br>
+          Suchen Sie dazu nach Quelldateien, die im Namen die Zeichenkette <i>"main"</i>
+          enthalten. Durchsuchen Sie den Inhalt der gefundenen Datein mit <code>grep</code>,
+          ob Sie die Initialisierungsmethode <code>int main(int argc, char
+            *argv[])</code> enth&auml;lt.</li>
+        <li>Geben Sie mit <code>head</code> die ersten 25 Zeilen mehrerer
+          Quelldateien aus. Was ist dort immer zu finden?</li>
+      </ul>
+    </div>
+  </body>
+</html>
